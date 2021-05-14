@@ -45,3 +45,11 @@
   entry: 'blacklist|whitelist'
   language: pygrep
   files: \.tex$
+- id: sort-bib
+  name: Ensures bibliography is sorted
+  entry: 'sort_bib'
+  language: python
+  language_version: python3
+  additional_dependencies: [pybtex]
+  files: \.bib$
+  stages: [commit, manual]

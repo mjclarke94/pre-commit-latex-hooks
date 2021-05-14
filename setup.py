@@ -12,6 +12,9 @@ setup(
     ],
     packages=find_packages(),
     entry_points={
-        "console_scripts": ["consistent_spelling = latexhooks.consistent_spelling:main"]
+        "console_scripts": [
+            "consistent_spelling = latexhooks.consistent_spelling:main",
+            "sort_bib = latexhooks.sort_bib:main",
+        ]
     },
 )
